@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def twoSum(self, numbers, target):
+    def twoSum(self, numbers: List[int], target: int) -> List[int]:
         f_index = 0
         s_index = len(numbers) - 1
         while f_index < s_index:

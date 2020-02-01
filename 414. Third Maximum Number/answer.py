@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def thirdMax(self, nums):
+    def thirdMax(self, nums: List[int]) -> int:
         max_1 = nums[0]
         max_2 = max_3 = None
         for i in range(1, len(nums)):

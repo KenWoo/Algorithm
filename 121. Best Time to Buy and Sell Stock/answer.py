@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def maxProfit(self, prices):
+    def maxProfit(self, prices: List[int]) -> int:
         if prices is None or len(prices) < 2:
             return 0
         max = 0
