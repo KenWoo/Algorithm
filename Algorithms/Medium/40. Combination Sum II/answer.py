@@ -6,7 +6,6 @@ class Solution:
         candidates.sort()
         N = len(candidates)
         res = []
-        print(candidates)
 
         def dfs(start, target, vlist):
             if target == 0:
