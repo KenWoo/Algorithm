@@ -11,7 +11,6 @@ class Solution:
             if l <= r:
                 res.append(r)
                 r -= 1
-        print(res)
         for i in range(k+2, n+1):
             res.append(i)
         return res
