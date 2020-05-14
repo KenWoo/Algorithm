@@ -3,7 +3,6 @@ from typing import List
 
 class Solution:
     def gcdOfStrings(self, str1: str, str2: str) -> str:
-        # print(str1, str2)
         if len(str1) > len(str2):
             str1, str2 = str2, str1
         N, M = len(str1), len(str2)
@@ -12,7 +11,6 @@ class Solution:
         for i in range(N):
             if str1[i] != str2[i]:
                 return ""
-        print(str2, N, M)
         return self.gcdOfStrings(str1, str2[N:M])
 
 
