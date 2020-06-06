@@ -1,0 +1,16 @@
+from typing import List
+
+
+class Solution:
+    def repeatedStringMatch(self, A: str, B: str) -> int:
+        q = (len(B) - 1) // len(A) + 1
+        for i in range(2):
+            if B in A * (q+i):
+                return q+i
+        return -1
+
+
+if __name__ == "__main__":
+    s = Solution()
+    result = s.repeatedStringMatch("abcd", "cdabcdab")
+    print(result)
