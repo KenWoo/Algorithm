@@ -8,7 +8,6 @@ class Solution:
         for center in range(2*N-1):
             left = center // 2
             right = left + center % 2
-            print(left, right)
             while left >= 0 and right < N and s[left] == s[right]:
                 res += 1
                 left -= 1
