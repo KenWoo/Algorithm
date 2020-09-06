@@ -14,7 +14,6 @@ class Solution:
             if i > 0 and arr[i-1] > arr[i]:
                 break
             while j < N and arr[i] > arr[j]:
-                print(i, j)
                 j += 1
             res = min(res, j - i - 1)
         return res
